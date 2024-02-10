@@ -58,7 +58,19 @@
     .referer-warning a { color: #56bcf9; }
   </style>
 </head>
-
+	
+<audio id="player" src="bgm.mp3"></audio>
+<div>
+  <button onclick="document.getElementById('player').play()">Play</button>
+  <button onclick="document.getElementById('player').pause()">Pause</button>
+  <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+  <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+  <script>
+    player.autoplay= true;
+    player.volume = 0.1;
+</script>
+</div>
+	
   <div id="result-iframe-wrap" role="main">
     <iframe
       id="result"
@@ -193,14 +205,4 @@ h2
 
 </html>
 
-<audio id="player" src="https://www.youtube.com/watch?v=3_Sm51KHNAo"></audio>
-<div>
-  <button onclick="document.getElementById('player').play()">Play</button>
-  <button onclick="document.getElementById('player').pause()">Pause</button>
-  <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
-  <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
-  <script>
-    player.autoplay= true;
-    player.volume = 0.1;
-</script>
-</div>
+
