@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
 
     <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
 
@@ -58,7 +58,7 @@
     .referer-warning a { color: #56bcf9; }
   </style>
 </head>
-	
+
   <div id="result-iframe-wrap" role="main">
     <iframe
       id="result"
@@ -139,7 +139,7 @@ h2
 	}
 }
 .button {
-						text-shadow: 0 0 10px #D60620;
+						text-shadow: 0 0 15px #D60620;
             border: #D60620;
             color: white;
             text-align: center;
@@ -153,6 +153,37 @@ h2
   					left: 50%;
   					transform: translate(-50%, -50%);
         }
+        .button2 {
+          text-shadow: 0 0 15px #D60620;
+          border: #D60620;
+          color: white;
+          text-align: center;
+          text-decoration: outline;
+          display: inline-block;
+          font-size: 16px;
+          margin: 15px;
+          cursor: pointer;
+          position: absolute;
+           top: 80%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+        .playfor {
+          text-shadow: 0 0 10px #D60620;
+          border: #D60620;
+          color: white;
+          text-align: center;
+          text-decoration: outline;
+          display: inline-block;
+          font-size: 16px;
+          margin: 15px;
+          cursor: pointer;
+          position: absolute;
+           top: 95%;
+          right: 88%;
+          transform: translate(-50%, -50%);
+      }
+    
 </style>
 
   <script>
@@ -173,7 +204,9 @@ h2
 
 <body>
 	<h2 contenteditable='false'>hello baby !💝</h2>
-	<a href=&quot;./love.html&quot; class=&quot;button&quot;>i have a surprise for u, click here （￣︶￣）↗　</a>
+  <text class=playfor>play for music </text>
+	<a href=&quot;./letter.html&quot; class=&quot;button&quot;>i have a surprise for u, click here 😘</a>
+  <a href=&quot;./mail.html&quot; class=&quot;button2&quot;>you've got mail !💌</a>
 </body>
 
 </html>
@@ -194,13 +227,14 @@ h2
 </html>
 
 <audio id="player" src="bgm.mp3"></audio>
+
 <div>
   <button onclick="document.getElementById('player').play()">Play</button>
   <button onclick="document.getElementById('player').pause()">Pause</button>
   <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
   <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
   <script>
-    player.autoplay= true;
-    player.volume = 0.8;
-</script>
+    player.volume = 0.5;
+  </script>
+
 </div>
